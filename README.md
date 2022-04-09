@@ -26,4 +26,9 @@
   - `git tag -a <tag_name> -m <tag_message>` Annotated Tag คือ Tag ที่มีชื่อที่เราใส่ให้ Tag พร้อมทั้งมีข้อมูลเพิ่มเติม
   - `git tag <tag_name>` Lightweight Tag คือ Tag ที่มีแค่ชื่อที่เราตั้งให้ Tag แต่ไม่มีข้อมูลเพิ่มเติม
   - `git checkout -b <branch_name>` Creating a Branch (การสร้าง Branch ใหม่)
+  - `git restore --staged <file>` Removing changes in staging area
   - `git stash` เก็บบันทึกการเปลี่ยนแปลงใน Working Area และ Staging Area ไว้ก่อน
+    -  `git stash list` แสดงรายการ Stash
+    -  `git stash pop <stash_id>` นำการเปลี่ยนแปลงที่อยู่ใน Stash ออกมาใช้ แล้วจะลบ Stash ทิ้งหลังจากเอาของออกมาแล้ว
+    -  `git stash apply <stash_id>` นำการเปลี่ยนแปลงที่อยู่ใน Stash ออกมาใช้โดยที่ยังเก็บ Stash นั้นไว้อยู่
+    -  `git stash drop <stash_id>` ใช้ลบ Stash ที่ไม่ใช้
