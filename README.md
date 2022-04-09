@@ -20,12 +20,13 @@
   - `git push` ใช้เพื่อส่ง commit ไปยัง remote repo
   - `git clone` ใช้เพื่อคัดลอก repo จาก remote มายัง local
   - `git fetch` ใช้ดึงความเปลี่ยนแปลงจาก remote มายัง local แต่ยังไม่รวมเข้าด้วยกัน
+  - `git checkout -b <branch_name>` Creating a Branch (การสร้าง Branch ใหม่)
+  - `git rebase <base_branch>` คำสั่งที่ใช้เพื่อ Rebase
   - `git merge` ใช้รวมความเปลี่ยนแปลงที่ได้มาจาก fetch เข้ากับ local
   - `git pull` ใช้ดึงความเปลี่ยนแปลงจาก remote มายัง local และรวมเข้าด้วยกัน (มีค่าเท่ากับ fetch+merge)
   - `git log` ใช้เพื่อดูว่า git repo มี commit อะไรแล้วบ้าง
   - `git tag -a <tag_name> -m <tag_message>` Annotated Tag คือ Tag ที่มีชื่อที่เราใส่ให้ Tag พร้อมทั้งมีข้อมูลเพิ่มเติม
   - `git tag <tag_name>` Lightweight Tag คือ Tag ที่มีแค่ชื่อที่เราตั้งให้ Tag แต่ไม่มีข้อมูลเพิ่มเติม
-  - `git checkout -b <branch_name>` Creating a Branch (การสร้าง Branch ใหม่)
   - `git restore --staged <file>` Removing changes in staging area
   - `git stash` เก็บบันทึกการเปลี่ยนแปลงใน Working Area และ Staging Area ไว้ก่อน
     -  `git stash list` แสดงรายการ Stash
