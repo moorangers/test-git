@@ -33,3 +33,19 @@
     -  `git stash pop <stash_id>` นำการเปลี่ยนแปลงที่อยู่ใน Stash ออกมาใช้ แล้วจะลบ Stash ทิ้งหลังจากเอาของออกมาแล้ว
     -  `git stash apply <stash_id>` นำการเปลี่ยนแปลงที่อยู่ใน Stash ออกมาใช้โดยที่ยังเก็บ Stash นั้นไว้อยู่
     -  `git stash drop <stash_id>` ใช้ลบ Stash ที่ไม่ใช้
+
+### Fixing Mistakes
+
+#### git reset คือ Command ที่เอาไว้ยกเลิกการแก้ไขและย้อนเวลากลับไปที่ Commit ที่เราต้องการ
+
+  - `git reset --soft <target_commit_id>` ย้ายไปอยู่ Staging Area
+  - `git reset --mixed <target_commit_id>` ย้ายไปอยู่ Working Area
+  - `git reset --hard <target_commit_id>` หายไปอย่างถาวร
+
+#### git revert คือ Command ที่เอาไว้ยกเลิกการแก้ไขโดยการสร้าง Commit ใหม่ขึ้นมาที่มีหน้าตาเหมือนกับ Target Commit ในอดีต
+
+  - `git revert <target_commit_id>` Revert เป็นวิธีการยกเลิกการแก้ไขอีกวิธีหนึ่ง จะ Safe กว่า Reset ตรงที่ History การแก้ไขทั้งหมดจะยังคงได้รับการเก็บรักษาไว้ 
+
+
+
+
